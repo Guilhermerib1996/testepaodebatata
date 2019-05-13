@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorButton">#d0112b</color>
+    <color name="colorPrimary">#f7f7f8</color>
+    <color name="colorPrimaryDark">#2b2b2b</color>
+    <color name="colorAccent">#2b2b2b</color>
+    <color name="preto">#000000</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="azul">#0000FF</color>
+    <color name="colorWithTransparent">#dfffffff</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="textLight">#e7959595</color>
+    <color name="textDark">#2b2b2b</color>
+    <color name="colorFieldDisabled">#f7f7f8</color>
+    <color name="colorLine">#b1b1b1</color>
+    <color name="colorBorderButton">#b8b8b8</color>
+    <color name="colorScreenBackground">#FFFFFF</color>
+    <color name="colorLineError">#FF0000</color>
+    <color name="colorMenuLine">#7b7b7b</color>
+    <color name="colorEsgotado">#B90000</color>
+
+    <color name="actionBarLine">#5e000000</color>
+    <color name="actionBarTitleColor">#2b2b2b</color>
+    <color name="actionBarIconColor">#000000</color>
+    <color name="actionBarColor">#f7f7f8</color>
+    <color name="actionBarIconBulletColor">#d0112b</color>
+    <color name="actionBarIconBulletTextColor">#FFFFFF</color>
+    <color name="colorButtonInverse">#9c99a0</color>
+    <color name="tagCheckColor">#FFFFFF</color>
+    <color name="productTextColor">#959595</color>
+    <color name="infoTextColor">#404040</color>
+    <color name="productLabelColor">#404040</color>
+    <color name="productHeaderLine">#6A6A6A</color>
+    <color name="productLabelLightColor">#959595</color>
+    <color name="gridBackgroudColor">#e4e4e4</color>
+    <color name="gridColorOpaque">#FAFAFA</color>
+    <color name="whiteTransparent">#e2ffffff</color>
+    <color name="colorTextNormal">#9c99a0</color>
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorGoogle">#d34836</color>
+    <color name="texto_nao_ativo">#717171</color>
+    <color name="colorSearchIcon">#898E91</color>
+    <color name="colorSearchText">#606366</color>
+    <color name="colorSearchInside">#DCE3E7</color>
+    <color name="colorSearchBorder">#F9F9Fb</color>
+</resources>

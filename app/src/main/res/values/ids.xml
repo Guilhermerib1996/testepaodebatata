@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_color_name" type="id">color_name</item>
+    <item name="tag_draw" type="id">tag_draw</item>
+    <item name="tag_estampa" type="id">tag_estampa</item>
+    <item name="tag_color_id" type="id">tag_color_id</item>
+    <item name="tag_key" type="id">tag_key</item>
+    <item name="tag_id" type="id">tag_id</item>
+    <item name="tag_id_pack" type="id">tag_pack_id</item>
+    <item name="convertView" type="id">convertView</item>
+    <item name="idProduct" type="id">idProduct</item>
+    <item name="position" type="id">position</item>
+</resources>

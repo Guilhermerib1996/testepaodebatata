@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_height_icon_pack">30dp</dimen>
+    <dimen name="padding_icon_pack">10dp</dimen>
+    <dimen name="picasso_image_product_size">20dp</dimen>
+</resources>

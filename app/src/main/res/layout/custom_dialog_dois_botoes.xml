@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#2b2b2b"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#2b2b2b"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnNao"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/shape_button_inverse"
+            android:text="@string/nao"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/btnSim"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/shape_button"
+            android:textColor="@color/textColor"
+            android:text="@string/sim"
+            android:textAllCaps="false"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+</LinearLayout>

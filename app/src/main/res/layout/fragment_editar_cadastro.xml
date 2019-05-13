@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground"
+    tools:context=".fragment.EditarCadastroFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/actionBarHeight" />
+
+            <include layout="@layout/logo_include" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginTop="40dp"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="CNPJ ou CPF"
+                    android:textColor="#2b2b2b"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/bgErroDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/field_m_t"
+                    android:background="@drawable/shape_line_success"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtDoc"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#e5e5e5"
+                        android:enabled="false"
+                        android:gravity="center|left"
+                        android:inputType="number"
+                        android:paddingLeft="16dp"
+                        android:textColor="#959595"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgErroDoc"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_exclamcao"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="Nome"
+                    android:textColor="#2b2b2b"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/bgErroNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/field_m_t"
+                    android:background="@drawable/shape_line_success"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtNome"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="text"
+                        android:textColor="#959595"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgErroNome"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_exclamcao"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="E-mail"
+                    android:textColor="#2b2b2b"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/bgErroEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/field_m_t"
+                    android:background="@drawable/shape_line_success"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#959595"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/imgErroEmail"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_exclamcao"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="Celular"
+                    android:textColor="#2b2b2b"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/bgErroCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="@dimen/field_m_t"
+                    android:background="@drawable/shape_line_success"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFakeCelular"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textColor="#959595"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/txtCelular"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center|left"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textColor="#959595"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgErroCelular"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@mipmap/icon_exclamcao"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_button"
+                    android:text="Salvar informações"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/button_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/loading" />
+
+</RelativeLayout>

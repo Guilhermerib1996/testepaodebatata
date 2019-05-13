@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="VestiSwitchButton">
+        <attr name="ativo" format="boolean" />
+        <attr name="texto" format="string" />
+    </declare-styleable>
+</resources>

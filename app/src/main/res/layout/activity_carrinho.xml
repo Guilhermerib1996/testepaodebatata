@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_carrinho"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/content_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textSemItens"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/textSemItens"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="60dp"
+                        android:text="@string/sem_produtos_no_carrinho"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:id="@+id/box_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fillViewport="true"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lstCarrinho"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:forceHasOverlappingRendering="true"
+                                android:nestedScrollingEnabled="false"
+                                android:scrollbars="none"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                        </android.support.v4.widget.NestedScrollView>
+
+
+                        <include layout="@layout/carrinho_footer" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <include layout="@layout/loading" />
+
+            <include layout="@layout/carrinho_compra_finalizada" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
